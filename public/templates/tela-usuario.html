@@ -2,36 +2,36 @@
     <div class="panel-heading">
         <h3 class="panel-title">Faça seu Cadastro</h3>
     </div>
-    <form>
+    <form ng-submit="gravar()">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="Name">Nome</label>
-                    <input type="text" class="form-control" id="Name" placeholder="Seu Nome Completo">
+                    <input type="text" class="form-control" id="Name" placeholder="Seu Nome Completo" ng-model="nome">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="Email">Email</label>
-                    <input type="email" class="form-control" id="Email" placeholder="Email@exemplo.com">
+                    <input type="email" class="form-control" id="Email" placeholder="Email@exemplo.com" ng-model="email">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="Passowrd">Senha</label>
-                    <input type="password" class="form-control" id="Passowrd" placeholder="Senha">
+                    <input type="password" class="form-control" id="Passowrd" placeholder="Senha" ng-model="senha">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="ConfirmPassword">Confirmar Senha</label>
-                    <input type="password" class="form-control" id="ConfirmPassword" placeholder="Senha">
+                    <input type="password" class="form-control" id="ConfirmPassword" placeholder="Senha" ng-model="confirmaSenha">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="numMatricula">Numero de Matricula</label>
-                    <input type="password" class="form-control" id="numMatricula" placeholder="Ex: 0123456">
+                    <input type="password" class="form-control" id="numMatricula" placeholder="Ex: 0123456" ng-model="matricula">
                 </div>
             </div>
             <div class="col-md-6">

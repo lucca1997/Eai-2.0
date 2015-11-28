@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <title>E Aí?</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="js/parse-1.6.7.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
 
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+
     <script src="js/app.js"></script>
+    <script src="js/usuarios.js"></script>
+    <script src="js/cadUsuario.js"></script>
 
 </head>
 
-<body id="corpo">
+<body id="corpo" ng-controller="mainController">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
 
@@ -39,15 +42,13 @@
         <div class="row">
             <div id="menu" class="col-md-2">
                 <ul class="nav nav-pills nav-stacked">
-                    <li role="presentation" class="active"><a href="idUsuario">Usuário</a></li>
-                    <li role="presentation"><a href="idPesquisa">Pesquisas</a></li>
-                    <li role="presentation"><a href="idPerguntas">Perguntas</a></li>
-                    <li role="presentation"><a href="idQuestionario">Questionários</a></li>
+                    <li role="presentation" class="active"><a href="#lista-usuarios">Usuário</a></li>
+                    <li role="presentation"><a href="#idPerguntas">Perguntas</a></li>
+                    <li role="presentation"><a href="#idQuestionario">Questionários</a></li>
                 </ul>
             </div>
             <div class="col-md-8">
-
-
+                <div ng-view></div>
             </div>
             <div class="col-md-2">
 

@@ -1,0 +1,6 @@
+<ul>
+    <li ng-repeat="usuario in usuarios track by $index">
+        <input type="checkbox" ng-model="usuario.selecionado">{{usuario.nome}}</li>
+
+</ul>
+<a class="button" href="#idUsuario">ADD</a>
