@@ -1,0 +1,104 @@
+        html,
+        body,
+        .corpo {
+            background-image: url(textura.jpg);
+            opacity: 90%;
+        }
+        
+        .container {
+            height: 100%;
+        }
+        
+        #login-form-div {
+            width: 50%;
+            min-width: 240px;
+            height: 50%;
+            min-height: 240px;
+            position: absolute;
+            margin: auto;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+        
+        #login-form-div form {
+            margin: 15px;
+            position: relative;
+        }
+        
+        #login-form-div form .bnt {
+            position: relative;
+            float: right;
+        }
+        
+        #cadastro {
+            width: 50%;
+            min-width: 300px;
+            height: 50%;
+            min-height: 300px;
+            position: relative;
+            margin: auto;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+        
+        #cadastro form .bnt {
+            position: relative;
+            float: right;
+        }
+        
+        #cadastro form {
+            margin: 15px;
+            position: relative;
+        }
+        
+        #tipo {
+            margin-top: 24px;
+        }
+        
+        .navbar .container-fluid {
+            background-image: linear-gradient(to bottom, #337ab7 0, #2e6da4 100%);
+            margin: auto;
+        }
+        
+        .navbar-default .navbar-brand {
+            color: #FFFFFF;
+        }
+        
+        .navbar.navbar-default.navbar-fixed-bottom {
+            color: white;
+        }
+        
+        #propaganda {
+            display: table-cell;
+            background-color: yellow;
+            text-align: center;
+            height: 100%;
+        }
+        
+        #principal {
+            display: table;
+            height: 80%;
+            width: 100%;
+            margin: auto;
+        }
+        
+        #principal .row {
+            display: table-row;
+            height: 100%;
+        }
+        
+        #principal .row .col-md-2:last-of-type {
+            display: table-cell;
+            background-image: linear-gradient(to bottom, #337ab7 0, #2e6da4 100%);
+            text-align: center;
+            height: 80%;
+        }
+        
+        #menu {
+            background-color: aliceblue;
+            border-radius: 20px;
+        }
