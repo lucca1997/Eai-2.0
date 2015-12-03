@@ -1,13 +1,14 @@
-<div id="cadastro" class="panel panel-primary">
+<div id="cadastroPerg" class="panel panel-primary">
     <div class="panel-heading">
-        <h3 class="panel-title">Faça seu Cadastro</h3>
+        <h3 class="panel-title">Faça sua Pergunta</h3>
     </div>
     <form ng-submit="gravar()">
         <ul>
-            <li ng-repeat="usuario in usuarios track by $index">
-                <input type="checkbox" ng-model="usuario.selecionado">{{usuario.nome}}</li>
+            <li ng-repeat="pergunta in perguntas track by $index">
+                <input type="checkbox" ng-model="pergunta.selecionado">{{pergunta.texto}}</li>
 
         </ul>
-        <a class="btn btn-primary" href="#idPergunta">ADD</a>
+        <a class="btn btn-primary" href="#/idPerguntas">ADD</a>
+        <button class="btn btn-primary" ng-click="excluir()">Excluir</button>
     </form>
 </div>

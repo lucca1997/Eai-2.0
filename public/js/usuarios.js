@@ -20,4 +20,16 @@ eaiApp.controller('userController', function ($scope) {
             $scope.$apply();
         }
     });
+
+    $scope.excluir = function () {
+        var query = new Parse.Query(Usuario);
+        $scope.usuarios = _.filter($scope.usuarios, function (usuario) {
+            if (usuario.selecionado) {
+                query.get(usuario.id).then(function (upUsuario) {
+                    upUsuario.destroy();
+                });
+            }
+            return !usuario.selecionado;
+        });
+    };
 });

@@ -4,16 +4,11 @@
     </div>
     <form ng-submit="gravar()">
         <ul>
-    <li ng-repeat="usuario in usuarios track by $index">
-        <input type="checkbox" ng-model="usuario.selecionado">{{usuario.nome}}</li>
+            <li ng-repeat="usuario in usuarios track by $index">
+                <input type="checkbox" ng-model="usuario.selecionado">{{usuario.nome}}</li>
 
-</ul>
-<a class="btn btn-primary" href="#idUsuario">ADD</a>
+        </ul>
+        <a class="btn btn-primary" href="#idUsuario">ADD</a>
+        <button class="btn btn-primary" ng-click="excluir()">Excluir</button>
     </form>
 </div>
-   
-
-   
-   
-   
-   
