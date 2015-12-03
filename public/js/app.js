@@ -8,7 +8,7 @@ singleApp.config(function ($routeProvider) {
         })
         .when('/idPerguntas', {
             templateUrl: 'templates/tela-perguntas.html',
-            controller: 'mainController'
+            controller: 'perguntaController'
         })
         .when('/lista-usuarios', {
             templateUrl: 'templates/lista-usuarios.html',
