@@ -16,5 +16,8 @@ eaiApp.controller('userController', function ($scope) {
             };
         });
 
+        if (!$scope.$$phase) {
+            $scope.$apply();
+        }
     });
 });

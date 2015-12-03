@@ -1,6 +1,6 @@
 var eaiApp = angular.module('eai');
 
-eaiApp.controller('usuarioController', function ($scope) {
+eaiApp.controller('usuarioController', function ($scope, $window) {
     var Usuario = Parse.Object.extend('usuarios');
     $scope.gravar = function () {
         var usuario = new Usuario();
@@ -10,6 +10,7 @@ eaiApp.controller('usuarioController', function ($scope) {
         usuario.set('matricula', $scope.matricula);
         usuario.save().then(function () {
             alert('Gravado com sucesso');
+            $window.location.href = "#/lista-usuarios";
 
         }, function (error) {
             alert('Erro:' + error.message);
