@@ -1,6 +1,19 @@
-<ul>
+<div id="cadastro" class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Faça seu Cadastro</h3>
+    </div>
+    <form ng-submit="gravar()">
+        <ul>
     <li ng-repeat="usuario in usuarios track by $index">
         <input type="checkbox" ng-model="usuario.selecionado">{{usuario.nome}}</li>
 
 </ul>
 <a class="btn btn-primary" href="#idUsuario">ADD</a>
+    </form>
+</div>
+   
+
+   
+   
+   
+   
