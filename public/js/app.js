@@ -14,6 +14,10 @@ singleApp.config(function ($routeProvider) {
             templateUrl: 'templates/lista-usuarios.html',
             controller: 'userController'
         })
+        .when('/lista-perguntas', {
+            templateUrl: 'templates/lista-perguntas.html',
+            controller: 'pergController'
+        })
 });
 
 
